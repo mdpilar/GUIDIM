@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion del Clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar roundBorder">
+            <div class="navbar-brand">Mi Lista de Tareas</div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Clima</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="weather-container">
+        <h2>Aplicacion del Clima</h2>
+        <input type="text" id="city" placeholder="Ingrese una ciudad">
+        <button onclick="getWeather()">Buscar</button>
+
+        <img id="weather-icon" alt="Icono del clima">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="./script.js"></script> 
+    <script src="clima.js"></script>
+</body>
+</html>
